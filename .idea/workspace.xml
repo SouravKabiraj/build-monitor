@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea37549b-ca12-46ef-ba05-845e527e0b4e" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/services/ComponentOutputDriver.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/drivers/raspberryPi.driver.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/raspberryPiViewCode.model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/component.model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/cicdViewManager.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>emitDecoratorMetadata</find>
+      <find>reflect-metadata</find>
+      <find>ErrorHandlingMiddleware</find>
+      <find>CredentialsSettingMiddleware</find>
+      <find>Container</find>
+      <find>container</find>
+      <find>GoCdGateway</find>
+      <find>serviceIdentifier</find>
+      <find>Failed to fetch build details</find>
+      <find>opopopoop</find>
+      <find>getPartnersFrontendBuildDetails</find>
+      <find>FINL</find>
+      <find>buildResultPartnerFrontend</find>
+      <find>lastBuildStatus</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>,'FINL</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/src/models/buildResult.ts" />
+        <option value="$PROJECT_DIR$/src/service/frontendBuild.service.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/models/stage.ts" />
+        <option value="$PROJECT_DIR$/src/controllers/frontendBuild.controller.ts" />
+        <option value="$PROJECT_DIR$/test/controllers/frontendBuild.controller.spec.ts" />
+        <option value="$PROJECT_DIR$/test/gateways/goCd.gateway.spec.ts" />
+        <option value="$PROJECT_DIR$/test/mocha.opt" />
+        <option value="$PROJECT_DIR$/test/mocha.opts" />
+        <option value="$PROJECT_DIR$/node_modules/inversify/lib/annotation/injectable.js" />
+        <option value="$PROJECT_DIR$/test/services/frontendBuild.service.spec.ts" />
+        <option value="$PROJECT_DIR$/src/services/frontendBuild.service.ts" />
+        <option value="$PROJECT_DIR$/src/services/buildService.ts" />
+        <option value="$PROJECT_DIR$/test/services/build.service.spec.ts" />
+        <option value="$PROJECT_DIR$/src/gateways/raspberryPi.gateway.ts" />
+        <option value="$PROJECT_DIR$/test/gateways/raspberryPi.gateway.spec.ts" />
+        <option value="$PROJECT_DIR$/src/view/raspberryPi.view.ts" />
+        <option value="$PROJECT_DIR$/test/views/raspberryPi.view.spec.ts" />
+        <option value="$PROJECT_DIR$/src/services/build.service.ts" />
+        <option value="$PROJECT_DIR$/src/services/componentBuildService.ts" />
+        <option value="$PROJECT_DIR$/test/services/componentBuild.service.spec.ts" />
+        <option value="$PROJECT_DIR$/src/models/raspberryPiViewCode.model.ts" />
+        <option value="$PROJECT_DIR$/src/services/outputManager.service.ts" />
+        <option value="$PROJECT_DIR$/test/services/outputManager.service.spec.ts" />
+        <option value="$PROJECT_DIR$/src/services/componentOutputManagerService.ts" />
+        <option value="$PROJECT_DIR$/src/views/raspberryPi.view.ts" />
+        <option value="$PROJECT_DIR$/test/services/componentOutputManager.service.spec.ts" />
+        <option value="$PROJECT_DIR$/test/services/cicdViewManager.service.spec.ts" />
+        <option value="$PROJECT_DIR$/src/models/Injector.ts" />
+        <option value="$PROJECT_DIR$/src/ApplicationServer.ts" />
+        <option value="$PROJECT_DIR$/build/app.js" />
+        <option value="$PROJECT_DIR$/src/app.ts" />
+        <option value="$PROJECT_DIR$/build/services/componentBuild.service.js" />
+        <option value="$PROJECT_DIR$/src/services/componentOutputManager.service.ts" />
+        <option value="$PROJECT_DIR$/src/services/componentOutputDriverService.ts" />
+        <option value="$PROJECT_DIR$/src/drivers/raspberryPi.view.ts" />
+        <option value="$PROJECT_DIR$/src/drivers/raspberryPiDriver.ts" />
+        <option value="$PROJECT_DIR$/src/services/componentOutputDriver.service.ts" />
+        <option value="$PROJECT_DIR$/src/models/component.model.ts" />
+        <option value="$PROJECT_DIR$/src/models/component.ts" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/services/cicdViewManager.service.ts" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.json" />
+        <option value="$PROJECT_DIR$/src/services/componentBuild.service.ts" />
+        <option value="$PROJECT_DIR$/src/gateways/goCd.gateway.ts" />
+        <option value="$PROJECT_DIR$/src/services/ComponentOutputDriver.service.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="build-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="build-monitor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="build-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="build-monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="build-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="build-monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="build-monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="build-monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/test/services/cicdViewManager.service.spec.ts" />
+      <recent name="$PROJECT_DIR$/test/services/outputManager.service.spec.ts" />
+      <recent name="$PROJECT_DIR$/src/models/raspberryPiViewCode.model.ts" />
+      <recent name="$PROJECT_DIR$/test/views/raspberryPi.view.spec.ts" />
+      <recent name="$PROJECT_DIR$/src/view/raspberryPi.view.ts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="debug" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="debug" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="CicdViewManagerServiceSpec.shouldUpdateAllComponentBuildStatus" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>mocha-typescript</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/services/cicdViewManager.service.spec.ts</test-file>
+      <test-names>
+        <name value="CicdViewManagerServiceSpec" />
+        <name value="shouldUpdateAllComponentBuildStatus" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ComponentOutputManagerServiceSpec" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>mocha-typescript</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/services/componentOutputManager.service.spec.ts</test-file>
+      <test-names>
+        <name value="ComponentOutputManagerServiceSpec" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ComponentOutputManagerServiceSpec.shouldFetchViewStatusForComponent" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>mocha-typescript</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/services/componentOutputManager.service.spec.ts</test-file>
+      <test-names>
+        <name value="ComponentOutputManagerServiceSpec" />
+        <name value="shouldFetchViewStatusForComponent" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.debug" />
+        <item itemvalue="Mocha.CicdViewManagerServiceSpec.shouldUpdateAllComponentBuildStatus" />
+        <item itemvalue="Mocha.ComponentOutputManagerServiceSpec.shouldFetchViewStatusForComponent" />
+        <item itemvalue="Mocha.ComponentOutputManagerServiceSpec" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea37549b-ca12-46ef-ba05-845e527e0b4e" name="Default Changelist" comment="" />
+      <created>1555139178216</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555139178216</updated>
+      <workItem from="1555139180442" duration="5826000" />
+      <workItem from="1555148097911" duration="207000" />
+      <workItem from="1555148314930" duration="6520000" />
+      <workItem from="1557910614293" duration="1442000" />
+      <workItem from="1558174833597" duration="2143000" />
+      <workItem from="1558511391760" duration="49000" />
+      <workItem from="1561539327479" duration="180000" />
+      <workItem from="1561888825546" duration="12133000" />
+      <workItem from="1562309392059" duration="504000" />
+      <workItem from="1563910566915" duration="4301000" />
+      <workItem from="1565353902655" duration="8789000" />
+      <workItem from="1565601466782" duration="750000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="OutputManagerServiceSpec - 2019.07.01 at 17h 40m 22s.xml">
+      <configuration name="OutputManagerServiceSpec" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="OutputManagerServiceSpec_shouldChangeToPositiveStatusWhileComponentBuildFailed - 2019.07.01 at 17h 46m 41s.xml">
+      <configuration name="OutputManagerServiceSpec.shouldChangeToPositiveStatusWhileComponentBuildFailed" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="ComponentOutputManagerServiceSpec - 2019.07.01 at 18h 01m 11s.xml">
+      <configuration name="ComponentOutputManagerServiceSpec" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="ComponentOutputManagerServiceSpec_shouldFetchViewStatusForComponent - 2019.07.01 at 18h 01m 57s.xml">
+      <configuration name="ComponentOutputManagerServiceSpec.shouldFetchViewStatusForComponent" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="CicdViewManagerServiceSpec_shouldUpdateAllComponentBuildStatus - 2019.07.01 at 18h 21m 32s.xml">
+      <configuration name="CicdViewManagerServiceSpec.shouldUpdateAllComponentBuildStatus" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="CicdViewManagerServiceSpec_shouldUpdateAllComponentBuildStatus - 2019.07.01 at 18h 34m 41s.xml">
+      <configuration name="CicdViewManagerServiceSpec.shouldUpdateAllComponentBuildStatus" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="CicdViewManagerServiceSpec_shouldUpdateAllComponentBuildStatus - 2019.07.01 at 18h 36m 04s.xml">
+      <configuration name="CicdViewManagerServiceSpec.shouldUpdateAllComponentBuildStatus" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="CicdViewManagerServiceSpec_shouldUpdateAllComponentBuildStatus - 2019.07.01 at 18h 36m 22s.xml">
+      <configuration name="CicdViewManagerServiceSpec.shouldUpdateAllComponentBuildStatus" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="CicdViewManagerServiceSpec_shouldUpdateAllComponentBuildStatus - 2019.07.01 at 18h 38m 03s.xml">
+      <configuration name="CicdViewManagerServiceSpec.shouldUpdateAllComponentBuildStatus" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="CicdViewManagerServiceSpec_shouldUpdateAllComponentBuildStatus - 2019.07.01 at 18h 38m 14s.xml">
+      <configuration name="CicdViewManagerServiceSpec.shouldUpdateAllComponentBuildStatus" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="42844000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24806201" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32961586" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49964765" weight="0.18215613" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49964765" weight="0.5229244" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49964765" weight="0.32939634" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="TypeScript" order="9" sideWeight="0.49964765" weight="0.32939634" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003524" side_tool="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49964765" weight="0.3283767" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32961586" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32961586" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32961586" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/jsonSchemas/tsconfig-schema.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="266" column="12" selection-start-line="266" selection-start-column="12" selection-end-line="266" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/stage.ts" />
+    <entry file="file://$PROJECT_DIR$/test/mocha.env.js" />
+    <entry file="file://$PROJECT_DIR$/test/mocha.opt" />
+    <entry file="file://$PROJECT_DIR$/node_modules/reflect-metadata/Reflect.d.ts" />
+    <entry file="file://$PROJECT_DIR$/test/mocha.opts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/inversify/dts/inversify.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/inversify/dts/annotation/injectable.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/inversify/lib/annotation/injectable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gateways/raspberryPi.gateway.ts" />
+    <entry file="file://$PROJECT_DIR$/test/gateways/raspberryPi.gateway.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/test/views/raspberryPi.view.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/onoff/onoff.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/services/componentOutputManager.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/services/componentBuild.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/services/cicdViewManager.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/frontendBuild.controller.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ts-mockito/lib/ts-mockito.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Injector.ts" />
+    <entry file="file://$PROJECT_DIR$/src/ApplicationServer.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="7130" column="4" selection-start-line="7130" selection-start-column="4" selection-end-line="7130" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/inversify/dts/container/container.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/inversify/lib/planning/planner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/inversify/dts/interfaces/interfaces.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/gateways/goCd.gateway.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/services/componentBuild.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/buildResult.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="140" column="21" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/NodeJS/lib/NodeJS.jar!/com/jetbrains/nodejs/packageJson/packageJsonSchema.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/services/cicdViewManager.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="38" column="124" selection-start-line="38" selection-start-column="124" selection-end-line="38" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <element signature="e#397#672#0" />
+            <element signature="e#680#997#0" />
+            <element signature="e#746#993#0" />
+            <element signature="e#1001#1342#0" />
+            <element signature="e#1067#1338#0" />
+            <element signature="e#1346#1678#0" />
+            <element signature="e#1412#1674#0" />
+            <element signature="e#1682#2038#0" />
+            <element signature="e#1748#2034#0" />
+            <element signature="e#2042#2380#0" />
+            <element signature="e#2108#2376#0" />
+            <element signature="e#2384#2746#0" />
+            <element signature="e#2450#2742#0" />
+            <element signature="e#2750#3073#0" />
+            <element signature="e#2816#3069#0" />
+            <element signature="e#3077#3422#0" />
+            <element signature="e#3143#3418#0" />
+            <element signature="e#3426#3743#0" />
+            <element signature="e#3492#3739#0" />
+            <element signature="e#3747#4088#0" />
+            <element signature="e#3813#4084#0" />
+            <element signature="e#4092#4419#0" />
+            <element signature="e#4158#4415#0" />
+            <element signature="e#4423#4774#0" />
+            <element signature="e#4489#4770#0" />
+            <element signature="e#4778#5111#0" />
+            <element signature="e#4844#5107#0" />
+            <element signature="e#5115#5472#0" />
+            <element signature="e#5181#5468#0" />
+            <element signature="e#5476#5793#0" />
+            <element signature="e#5542#5789#0" />
+            <element signature="e#5797#6136#0" />
+            <element signature="e#5863#6132#0" />
+            <element signature="e#6140#6451#0" />
+            <element signature="e#6206#6447#0" />
+            <element signature="e#6455#6790#0" />
+            <element signature="e#6521#6786#0" />
+            <element signature="e#6794#7115#0" />
+            <element signature="e#6860#7111#0" />
+            <element signature="e#7119#7464#0" />
+            <element signature="e#7185#7460#0" />
+            <element signature="e#7468#7795#0" />
+            <element signature="e#7534#7791#0" />
+            <element signature="e#7799#8150#0" />
+            <element signature="e#7865#8146#0" />
+            <element signature="e#8154#8501#0" />
+            <element signature="e#8220#8497#0" />
+            <element signature="e#8505#8874#0" />
+            <element signature="e#8571#8870#0" />
+            <element signature="e#8878#9219#0" />
+            <element signature="e#8944#9215#0" />
+            <element signature="e#9223#9588#0" />
+            <element signature="e#9289#9584#0" />
+            <element signature="e#9592#9948#0" />
+            <element signature="e#9658#9944#0" />
+            <element signature="e#9952#10332#0" />
+            <element signature="e#10018#10328#0" />
+            <element signature="e#10336#10693#0" />
+            <element signature="e#10402#10689#0" />
+            <element signature="e#10697#11078#0" />
+            <element signature="e#10763#11074#0" />
+            <element signature="e#11082#11421#0" />
+            <element signature="e#11148#11417#0" />
+            <element signature="e#11425#11786#0" />
+            <element signature="e#11491#11782#0" />
+            <element signature="e#11790#12123#0" />
+            <element signature="e#11856#12119#0" />
+            <element signature="e#12127#12484#0" />
+            <element signature="e#12193#12480#0" />
+            <element signature="e#12488#12831#0" />
+            <element signature="e#12554#12827#0" />
+            <element signature="e#12835#13202#0" />
+            <element signature="e#12901#13198#0" />
+            <element signature="e#13206#13555#0" />
+            <element signature="e#13272#13551#0" />
+            <element signature="e#13559#13932#0" />
+            <element signature="e#13625#13928#0" />
+            <element signature="e#13936#14269#0" />
+            <element signature="e#14002#14265#0" />
+            <element signature="e#14273#14628#0" />
+            <element signature="e#14339#14624#0" />
+            <element signature="e#14632#14959#0" />
+            <element signature="e#14698#14955#0" />
+            <element signature="e#14963#15314#0" />
+            <element signature="e#15029#15310#0" />
+            <element signature="e#15318#15655#0" />
+            <element signature="e#15384#15651#0" />
+            <element signature="e#15659#16020#0" />
+            <element signature="e#15725#16016#0" />
+            <element signature="e#16024#16367#0" />
+            <element signature="e#16090#16363#0" />
+            <element signature="e#16371#16738#0" />
+            <element signature="e#16437#16734#0" />
+            <element signature="e#16742#17069#0" />
+            <element signature="e#16808#17065#0" />
+            <element signature="e#17073#17422#0" />
+            <element signature="e#17139#17418#0" />
+            <element signature="e#17426#17747#0" />
+            <element signature="e#17492#17743#0" />
+            <element signature="e#17751#18096#0" />
+            <element signature="e#17817#18092#0" />
+            <element signature="e#18100#18448#0" />
+            <element signature="e#18166#18444#0" />
+            <element signature="e#18452#18822#0" />
+            <element signature="e#18518#18818#0" />
+            <element signature="e#18826#19168#0" />
+            <element signature="e#18892#19164#0" />
+            <element signature="e#19172#19538#0" />
+            <element signature="e#19238#19534#0" />
+            <element signature="e#19542#19894#0" />
+            <element signature="e#19608#19890#0" />
+            <element signature="e#19898#20274#0" />
+            <element signature="e#19964#20270#0" />
+            <element signature="e#20278#20619#0" />
+            <element signature="e#20344#20615#0" />
+            <element signature="e#20623#20988#0" />
+            <element signature="e#20689#20984#0" />
+            <element signature="e#20992#21335#0" />
+            <element signature="e#21058#21331#0" />
+            <element signature="e#21339#21704#0" />
+            <element signature="e#21405#21700#0" />
+            <element signature="e#21708#22045#0" />
+            <element signature="e#21774#22041#0" />
+            <element signature="e#22049#22410#0" />
+            <element signature="e#22115#22406#0" />
+            <element signature="e#22414#22766#0" />
+            <element signature="e#22480#22762#0" />
+            <element signature="e#22770#23146#0" />
+            <element signature="e#22836#23142#0" />
+            <element signature="e#23150#23501#0" />
+            <element signature="e#23216#23497#0" />
+            <element signature="e#23505#23878#0" />
+            <element signature="e#23571#23874#0" />
+            <element signature="e#23882#24227#0" />
+            <element signature="e#23948#24223#0" />
+            <element signature="e#24231#24600#0" />
+            <element signature="e#24297#24596#0" />
+            <element signature="e#24604#24964#0" />
+            <element signature="e#24670#24960#0" />
+            <element signature="e#24968#25352#0" />
+            <element signature="e#25034#25348#0" />
+            <element signature="e#25356#25712#0" />
+            <element signature="e#25422#25708#0" />
+            <element signature="e#25716#26094#0" />
+            <element signature="e#25782#26090#0" />
+            <element signature="e#26098#26443#0" />
+            <element signature="e#26164#26439#0" />
+            <element signature="e#26447#26816#0" />
+            <element signature="e#26513#26812#0" />
+            <element signature="e#26820#27180#0" />
+            <element signature="e#26886#27176#0" />
+            <element signature="e#27184#27568#0" />
+            <element signature="e#27250#27564#0" />
+            <element signature="e#27572#27899#0" />
+            <element signature="e#27638#27895#0" />
+            <element signature="e#27903#28252#0" />
+            <element signature="e#27969#28248#0" />
+            <element signature="e#28256#28581#0" />
+            <element signature="e#28322#28577#0" />
+            <element signature="e#28585#28932#0" />
+            <element signature="e#28651#28928#0" />
+            <element signature="e#28936#29255#0" />
+            <element signature="e#29002#29251#0" />
+            <element signature="e#29259#29600#0" />
+            <element signature="e#29325#29596#0" />
+            <element signature="e#29604#29923#0" />
+            <element signature="e#29670#29919#0" />
+            <element signature="e#29927#30268#0" />
+            <element signature="e#29993#30264#0" />
+            <element signature="e#30272#30595#0" />
+            <element signature="e#30338#30591#0" />
+            <element signature="e#30599#30948#0" />
+            <element signature="e#30665#30944#0" />
+            <element signature="e#30952#31267#0" />
+            <element signature="e#31018#31263#0" />
+            <element signature="e#31271#31608#0" />
+            <element signature="e#31337#31604#0" />
+            <element signature="e#31612#31931#0" />
+            <element signature="e#31678#31927#0" />
+            <element signature="e#31935#32280#0" />
+            <element signature="e#32001#32276#0" />
+            <element signature="e#32284#32607#0" />
+            <element signature="e#32350#32603#0" />
+            <element signature="e#32611#32960#0" />
+            <element signature="e#32677#32956#0" />
+            <element signature="e#32964#33297#0" />
+            <element signature="e#33030#33293#0" />
+            <element signature="e#33301#33660#0" />
+            <element signature="e#33367#33656#0" />
+            <element signature="e#33664#34003#0" />
+            <element signature="e#33730#33999#0" />
+            <element signature="e#34007#34372#0" />
+            <element signature="e#34073#34368#0" />
+            <element signature="e#34376#35068#0" />
+            <element signature="e#34442#34721#0" />
+            <element signature="e#34739#35064#0" />
+            <element signature="e#34747#35058#0" />
+            <element signature="e#34824#35050#0" />
+            <element signature="e#34836#35040#0" />
+            <element signature="e#34926#35028#0" />
+            <element signature="e#35072#35786#0" />
+            <element signature="e#35138#35439#0" />
+            <element signature="e#35457#35782#0" />
+            <element signature="e#35465#35776#0" />
+            <element signature="e#35542#35768#0" />
+            <element signature="e#35554#35758#0" />
+            <element signature="e#35644#35746#0" />
+            <element signature="e#35790#36133#0" />
+            <element signature="e#35856#36129#0" />
+            <element signature="e#36137#36504#0" />
+            <element signature="e#36203#36500#0" />
+            <element signature="e#36508#36841#0" />
+            <element signature="e#36574#36837#0" />
+            <element signature="e#36845#37200#0" />
+            <element signature="e#36911#37196#0" />
+            <element signature="e#37204#37536#0" />
+            <element signature="e#37270#37532#0" />
+            <element signature="e#37540#37896#0" />
+            <element signature="e#37606#37892#0" />
+            <element signature="e#37900#38259#0" />
+            <element signature="e#37966#38255#0" />
+            <element signature="e#38263#38644#0" />
+            <element signature="e#38329#38640#0" />
+            <element signature="e#38648#39006#0" />
+            <element signature="e#38714#39002#0" />
+            <element signature="e#39010#39392#0" />
+            <element signature="e#39076#39388#0" />
+            <element signature="e#39396#39743#0" />
+            <element signature="e#39462#39739#0" />
+            <element signature="e#39747#40116#0" />
+            <element signature="e#39813#40112#0" />
+            <element signature="e#40120#40459#0" />
+            <element signature="e#40186#40455#0" />
+            <element signature="e#40463#40826#0" />
+            <element signature="e#40529#40822#0" />
+            <element signature="e#40830#41159#0" />
+            <element signature="e#40896#41155#0" />
+            <element signature="e#41163#41514#0" />
+            <element signature="e#41229#41510#0" />
+            <element signature="e#41518#41844#0" />
+            <element signature="e#41584#41840#0" />
+            <element signature="e#41848#42198#0" />
+            <element signature="e#41914#42194#0" />
+            <element signature="e#42202#42553#0" />
+            <element signature="e#42268#42549#0" />
+            <element signature="e#42557#42930#0" />
+            <element signature="e#42623#42926#0" />
+            <element signature="e#42934#43282#0" />
+            <element signature="e#43000#43278#0" />
+            <element signature="e#43286#43658#0" />
+            <element signature="e#43352#43654#0" />
+            <element signature="e#43662#43997#0" />
+            <element signature="e#43728#43993#0" />
+            <element signature="e#44001#44358#0" />
+            <element signature="e#44067#44354#0" />
+            <element signature="e#44362#44696#0" />
+            <element signature="e#44428#44692#0" />
+            <element signature="e#44700#45058#0" />
+            <element signature="e#44766#45054#0" />
+            <element signature="e#45062#45408#0" />
+            <element signature="e#45128#45404#0" />
+            <element signature="e#45412#45780#0" />
+            <element signature="e#45478#45776#0" />
+            <element signature="e#45784#46122#0" />
+            <element signature="e#45850#46118#0" />
+            <element signature="e#46126#46488#0" />
+            <element signature="e#46192#46484#0" />
+            <element signature="e#46492#46842#0" />
+            <element signature="e#46558#46838#0" />
+            <element signature="e#46846#47218#0" />
+            <element signature="e#46912#47214#0" />
+            <element signature="e#47222#47566#0" />
+            <element signature="e#47288#47562#0" />
+            <element signature="e#47570#47938#0" />
+            <element signature="e#47636#47934#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gateways/goCd.gateway.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+          <folding>
+            <element signature="n#request#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/componentBuild.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="73" lean-forward="true" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/frontendBuild.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/raspberryPiViewCode.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/cicdViewManager.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drivers/raspberryPi.driver.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/component.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/ComponentOutputDriver.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

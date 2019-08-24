@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "types": [
+      "node"
+    ],
+    "moduleResolution": "node"
+  },
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts",
+    "../node_modules/asyncawait/src/typings/mocha/mocha.d.ts"
+  ]
+}
