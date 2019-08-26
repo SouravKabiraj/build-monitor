@@ -29,7 +29,7 @@ let GoCdGateway = class GoCdGateway {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const response = yield request
-                    .get('http://ci:8153/go/cctray.xml')
+                    .get('http://35.154.139.4:8153/go/cctray.xml')
                     .auth('build-monitor', 'bu!ldm0n!t0r', { type: 'basic' })
                     .set('Accept', 'application/vnd.go.cd.v1+json')
                     .send();
