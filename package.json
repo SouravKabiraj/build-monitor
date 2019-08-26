@@ -5,7 +5,8 @@
   "scripts": {
     "start": "tsc -p tsconfig.json && node ./build/app.js",
     "debug": "node $NODE_DEBUG_OPTION --inspect=0.0.0.0 --require ts-node/register/type-check src/app.ts",
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -r node_modules && rm -r build && npm install"
   },
   "keywords": [
     "build_monitor"
