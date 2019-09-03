@@ -1,5 +1,5 @@
 import {Container} from "inversify";
-import {CicdViewManagerService} from "./services/cicdViewManager.service";
+import {CicdViewManagerService} from "./services/CicdViewManager.service";
 
 console.log('Hello Finzy..');
 console.log('GoCD build monitor is starting...');

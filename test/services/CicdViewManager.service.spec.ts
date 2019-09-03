@@ -1,16 +1,16 @@
 import {suite, test} from "mocha-typescript";
-import {CicdViewManagerService} from "../../src/services/cicdViewManager.service";
+import {CicdViewManagerService} from "../../src/services/CicdViewManager.service";
 import {anything, instance, mock, verify, when} from "ts-mockito";
-import {ComponentBuildService} from "../../src/services/componentBuild.service";
-import {ComponentOutputDriverService} from "../../src/services/ComponentOutputDriver.service";
-import {Component} from "../../src/models/component.model";
-import {ViewCode} from "../../src/models/raspberryPiViewCode.model";
+import {ComponentBuildService} from "../../src/services/ComponentBuild.service";
+import {ComponentOutputManagerService} from "../../src/services/ComponentOutputManager.service";
+import {Component} from "../../src/models/Component.model";
+import {ViewCode} from "../../src/models/RaspberryPiViewCode.model";
 
 @suite
 class CicdViewManagerServiceSpec {
     private service: CicdViewManagerService;
     private componentBuildService = mock(ComponentBuildService);
-    private componentOutputManager = mock(ComponentOutputDriverService);
+    private componentOutputManager = mock(ComponentOutputManagerService);
 
     before(): void {
         this.service = new CicdViewManagerService(instance(this.componentBuildService), instance(this.componentOutputManager));

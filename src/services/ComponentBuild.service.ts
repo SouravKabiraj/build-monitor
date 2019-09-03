@@ -1,8 +1,8 @@
-import {BuildResult} from "../models/buildResult";
+import {BuildResult} from "../models/BuildResult";
 import {injectable} from 'inversify';
 import "reflect-metadata";
-import {GoCdGateway} from "../gateways/goCd.gateway";
-import {buildNameSeparator, Component, Stage} from "../models/component.model";
+import {GoCdGateway} from "../gateways/GoCd.gateway";
+import {buildNameSeparator, Component, Stage} from "../models/Component.model";
 
 @injectable()
 export class ComponentBuildService {

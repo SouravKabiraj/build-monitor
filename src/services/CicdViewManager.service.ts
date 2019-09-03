@@ -1,12 +1,12 @@
-import {ComponentBuildService} from "./componentBuild.service";
-import {ComponentOutputDriverService} from "./ComponentOutputDriver.service";
-import {Component} from "../models/component.model";
-import {ViewCode} from "../models/raspberryPiViewCode.model";
+import {ComponentBuildService} from "./ComponentBuild.service";
+import {ComponentOutputManagerService} from "./ComponentOutputManager.service";
+import {Component} from "../models/Component.model";
+import {ViewCode} from "../models/RaspberryPiViewCode.model";
 import {injectable} from "inversify";
 
 @injectable()
 export class CicdViewManagerService {
-    constructor(private componentBuildService: ComponentBuildService, private outputDriver: ComponentOutputDriverService) {
+    constructor(private componentBuildService: ComponentBuildService, private outputDriver: ComponentOutputManagerService) {
     }
 
     async updateCicdView(): Promise<void> {

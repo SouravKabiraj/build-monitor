@@ -1,9 +1,9 @@
 import {suite, test} from 'mocha-typescript';
 import {expect} from 'chai';
-import {ComponentBuildService} from "../../src/services/componentBuild.service";
+import {ComponentBuildService} from "../../src/services/ComponentBuild.service";
 import {instance, mock, when} from "ts-mockito";
-import {GoCdGateway} from "../../src/gateways/goCd.gateway";
-import {BuildResult} from "../../src/models/buildResult";
+import {GoCdGateway} from "../../src/gateways/GoCd.gateway";
+import {BuildResult} from "../../src/models/BuildResult";
 
 @suite
 class ComponentBuildServiceSpec {

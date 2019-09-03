@@ -1,18 +1,18 @@
 import {suite, test} from "mocha-typescript";
-import {ComponentOutputDriverService} from "../../src/services/ComponentOutputDriver.service";
-import {Component, ComponentViewPin} from "../../src/models/component.model";
-import {ViewCode} from "../../src/models/raspberryPiViewCode.model";
+import {ComponentOutputManagerService} from "../../src/services/ComponentOutputManager.service";
+import {Component, ComponentViewPin} from "../../src/models/Component.model";
+import {ViewCode} from "../../src/models/RaspberryPiViewCode.model";
 import {instance, mock, verify, when} from "ts-mockito";
-import {RaspberryPiDriver} from "../../src/drivers/raspberryPi.driver";
+import {RaspberryPiDriver} from "../../src/drivers/RaspberryPi.driver";
 import {expect} from 'chai';
 
 @suite
 class ComponentOutputManagerServiceSpec {
-    private service: ComponentOutputDriverService;
+    private service: ComponentOutputManagerService;
     private view = mock(RaspberryPiDriver);
 
     before(): void {
-        this.service = new ComponentOutputDriverService(instance(this.view));
+        this.service = new ComponentOutputManagerService(instance(this.view));
     }
 
     @test

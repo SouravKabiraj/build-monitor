@@ -1,4 +1,4 @@
-import {ComponentBuildService} from "../services/componentBuild.service";
+import {ComponentBuildService} from "../services/ComponentBuild.service";
 
 export class FrontendBuildController {
     constructor(private frontendBuildService: ComponentBuildService) {

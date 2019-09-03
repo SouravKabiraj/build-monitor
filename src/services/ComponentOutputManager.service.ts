@@ -1,11 +1,11 @@
-import {Component, ComponentModel} from "../models/component.model";
-import {ViewCode} from "../models/raspberryPiViewCode.model";
-import {RaspberryPiDriver} from "../drivers/raspberryPi.driver";
+import {Component, ComponentModel} from "../models/Component.model";
+import {ViewCode} from "../models/RaspberryPiViewCode.model";
+import {RaspberryPiDriver} from "../drivers/RaspberryPi.driver";
 import {injectable} from "inversify";
 import "reflect-metadata";
 
 @injectable()
-export class ComponentOutputDriverService {
+export class ComponentOutputManagerService {
     constructor(private view: RaspberryPiDriver) {
     }
 

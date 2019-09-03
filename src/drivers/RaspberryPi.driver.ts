@@ -1,5 +1,5 @@
-import {ComponentViewPin} from "../models/component.model";
-import {ViewCode} from "../models/raspberryPiViewCode.model";
+import {ComponentViewPin} from "../models/Component.model";
+import {ViewCode} from "../models/RaspberryPiViewCode.model";
 import {Gpio} from "onoff";
 import {injectable} from "inversify";
 import "reflect-metadata";

@@ -1,5 +1,5 @@
 import request = require('superagent');
-import {BuildResult} from "../models/buildResult";
+import {BuildResult} from "../models/BuildResult";
 import {injectable} from "inversify";
 import * as jsonXmlConverter from 'xml-js';
 
