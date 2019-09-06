@@ -12,36 +12,36 @@ export class ComponentBuildService {
 
     async getFrontendBuildDetails(): Promise<BuildResult> {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
-        return completeBuildResult.find(buildResult => buildResult.name === Component.Frontend + buildNameSeparator + Stage.Build);
+        return completeBuildResult.find(buildResult => buildResult.name === Component.Frontend + buildNameSeparator + Stage.QA);
     }
 
     async getBackendBuildDetails(): Promise<BuildResult> {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
-        return completeBuildResult.find(buildResult => buildResult.name === Component.Backend + buildNameSeparator + Stage.Build);
+        return completeBuildResult.find(buildResult => buildResult.name === Component.Backend + buildNameSeparator + Stage.QA);
     }
 
     async getAdminBuildDetails(): Promise<BuildResult> {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
-        return completeBuildResult.find(buildResult => buildResult.name === Component.Admin + buildNameSeparator + Stage.Build);
+        return completeBuildResult.find(buildResult => buildResult.name === Component.Admin + buildNameSeparator + Stage.QA);
     }
 
     async getFileManagementServiceBuildDetails(): Promise<BuildResult> {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
-        return completeBuildResult.find(buildResult => buildResult.name === Component.FileManagementService + buildNameSeparator + Stage.Build);
+        return completeBuildResult.find(buildResult => buildResult.name === Component.FileManagementService + buildNameSeparator + Stage.QA);
     }
 
     async getPartnersFrontendBuildDetails(): Promise<BuildResult> {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
-        return completeBuildResult.find(buildResult => buildResult.name === Component.PartnersFrontend + buildNameSeparator + Stage.Build);
+        return completeBuildResult.find(buildResult => buildResult.name === Component.PartnersFrontend + buildNameSeparator + Stage.QA);
     }
 
     async getPartnerServiceBuildDetails(): Promise<BuildResult> {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
-        return completeBuildResult.find(buildResult => buildResult.name === Component.PartnerService + buildNameSeparator + Stage.Build);
+        return completeBuildResult.find(buildResult => buildResult.name === Component.PartnerService + buildNameSeparator + Stage.QA);
     }
 
     async getEligibilityCheckServiceBuildDetails(): Promise<BuildResult> {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
-        return completeBuildResult.find(buildResult => buildResult.name === Component.EligibilityCheckService + buildNameSeparator + Stage.Build);
+        return completeBuildResult.find(buildResult => buildResult.name === Component.EligibilityCheckService + buildNameSeparator + Stage.QA);
     }
 }

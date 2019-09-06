@@ -47,6 +47,8 @@ export class ComponentModel {
                 return ComponentViewPin.PartnerService;
             case Component.AdminSequel:
                 return ComponentViewPin.AdminSequel;
+            case Component.EligibilityCheckService:
+                return ComponentViewPin.EligibilityCheckService;
         }
     }
 }
