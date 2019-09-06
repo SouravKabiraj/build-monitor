@@ -21,7 +21,7 @@ class CicdViewManagerServiceSpec {
         const failedBuild = {
             name: anything(),
             activity: anything(),
-            lastBuildStatus: 'failed',
+            lastBuildStatus: 'Failure',
             lastBuildLabel: anything(),
             lastBuildTime: anything(),
             webUrl: anything(),

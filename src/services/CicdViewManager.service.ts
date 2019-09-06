@@ -18,14 +18,15 @@ export class CicdViewManagerService {
         const buildResultFrontend = await this.componentBuildService.getFrontendBuildDetails();
         const buildResultPartnerService = await this.componentBuildService.getPartnerServiceBuildDetails();
         const buildResultEligibilityCheckService = await this.componentBuildService.getEligibilityCheckServiceBuildDetails();
+        console.log(JSON.stringify(buildResultEligibilityCheckService));
 
-        this.outputDriver.updateBuildStatusFor(Component.PartnersFrontend, buildResultPartnerFrontend.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.Admin, buildResultAdmin.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.Backend, buildResultBackend.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.FileManagementService, buildResultFileManagementService.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.Frontend, buildResultFrontend.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.PartnerService, buildResultPartnerService.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.EligibilityCheckService, buildResultEligibilityCheckService.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
+        this.outputDriver.updateBuildStatusFor(Component.PartnersFrontend, buildResultPartnerFrontend.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
+        this.outputDriver.updateBuildStatusFor(Component.Admin, buildResultAdmin.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
+        this.outputDriver.updateBuildStatusFor(Component.Backend, buildResultBackend.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
+        this.outputDriver.updateBuildStatusFor(Component.FileManagementService, buildResultFileManagementService.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
+        this.outputDriver.updateBuildStatusFor(Component.Frontend, buildResultFrontend.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
+        this.outputDriver.updateBuildStatusFor(Component.PartnerService, buildResultPartnerService.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
+        this.outputDriver.updateBuildStatusFor(Component.EligibilityCheckService, buildResultEligibilityCheckService.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
     }
 }
 
