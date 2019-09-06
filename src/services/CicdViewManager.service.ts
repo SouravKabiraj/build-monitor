@@ -17,6 +17,7 @@ export class CicdViewManagerService {
         const buildResultFileManagementService = await this.componentBuildService.getFileManagementServiceBuildDetails();
         const buildResultFrontend = await this.componentBuildService.getFrontendBuildDetails();
         const buildResultPartnerService = await this.componentBuildService.getPartnerServiceBuildDetails();
+        const buildResultEligibilityCheckService = await this.componentBuildService.getEligibilityCheckServiceBuildDetails();
 
         this.outputDriver.updateBuildStatusFor(Component.PartnersFrontend, buildResultPartnerFrontend.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
         this.outputDriver.updateBuildStatusFor(Component.Admin, buildResultAdmin.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
@@ -24,6 +25,7 @@ export class CicdViewManagerService {
         this.outputDriver.updateBuildStatusFor(Component.FileManagementService, buildResultFileManagementService.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
         this.outputDriver.updateBuildStatusFor(Component.Frontend, buildResultFrontend.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
         this.outputDriver.updateBuildStatusFor(Component.PartnerService, buildResultPartnerService.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
+        this.outputDriver.updateBuildStatusFor(Component.EligibilityCheckService, buildResultEligibilityCheckService.lastBuildStatus === 'failed' ? ViewCode.OFF : ViewCode.ON);
     }
 }
 

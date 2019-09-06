@@ -5,7 +5,8 @@ export enum Component {
     FileManagementService = 'FileManagementService',
     PartnersFrontend = 'PartnersFrontend',
     PartnerService = 'PartnerService',
-    AdminSequel = 'AdminSequel'
+    AdminSequel = 'AdminSequel',
+    EligibilityCheckService = 'EligibilityCheckService'
 }
 
 export enum ComponentViewPin {
@@ -15,7 +16,8 @@ export enum ComponentViewPin {
     FileManagementService = 3,
     PartnersFrontend = 4,
     PartnerService = 5,
-    AdminSequel = 6
+    AdminSequel = 6,
+    EligibilityCheckService = 21
 }
 
 export const buildNameSeparator = ' :: ';

@@ -39,4 +39,9 @@ export class ComponentBuildService {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
         return completeBuildResult.find(buildResult => buildResult.name === Component.PartnerService + buildNameSeparator + Stage.Build);
     }
+
+    async getEligibilityCheckServiceBuildDetails(): Promise<BuildResult> {
+        const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
+        return completeBuildResult.find(buildResult => buildResult.name === Component.EligibilityCheckService + buildNameSeparator + Stage.Build);
+    }
 }
