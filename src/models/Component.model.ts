@@ -17,7 +17,7 @@ export enum ComponentViewPin {
     PartnersFrontend = 4,
     PartnerService = 5,
     AdminSequel = 6,
-    EligibilityCheckService = 21
+    EligibilityCheckService = 7
 }
 
 export const buildNameSeparator = ' :: ';
