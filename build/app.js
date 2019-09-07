@@ -9,12 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const inversify_1 = require("inversify");
-const cicdViewManager_service_1 = require("./services/cicdViewManager.service");
+const CicdViewManager_service_1 = require("./services/CicdViewManager.service");
 console.log('Hello Finzy..');
 console.log('GoCD build monitor is starting...');
 console.log('GoCD build monitor is running...');
 const container = new inversify_1.Container({ autoBindInjectable: true });
-const cicdViewManager = container.get(cicdViewManager_service_1.CicdViewManagerService);
+const cicdViewManager = container.get(CicdViewManager_service_1.CicdViewManagerService);
 setInterval(function () {
     return __awaiter(this, void 0, void 0, function* () {
         yield cicdViewManager.updateCicdView();

@@ -17,36 +17,36 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const componentBuild_service_1 = require("./componentBuild.service");
-const ComponentOutputDriver_service_1 = require("./ComponentOutputDriver.service");
-const component_model_1 = require("../models/component.model");
-const raspberryPiViewCode_model_1 = require("../models/raspberryPiViewCode.model");
+const ComponentBuild_service_1 = require("./ComponentBuild.service");
+const Component_model_1 = require("../models/Component.model");
+const RaspberryPiViewCode_model_1 = require("../models/RaspberryPiViewCode.model");
 const inversify_1 = require("inversify");
+const RaspberryPi_driver_1 = require("../drivers/RaspberryPi.driver");
 let CicdViewManagerService = class CicdViewManagerService {
-    constructor(componentBuildService, outputDriver) {
+    constructor(componentBuildService, raspberryPiDriver) {
         this.componentBuildService = componentBuildService;
-        this.outputDriver = outputDriver;
+        this.raspberryPiDriver = raspberryPiDriver;
     }
     updateCicdView() {
         return __awaiter(this, void 0, void 0, function* () {
-            console.log('updating Cicd View');
-            const buildResultPartnerFrontend = yield this.componentBuildService.getPartnersFrontendBuildDetails();
-            const buildResultAdmin = yield this.componentBuildService.getAdminBuildDetails();
-            const buildResultBackend = yield this.componentBuildService.getBackendBuildDetails();
-            const buildResultFileManagementService = yield this.componentBuildService.getFileManagementServiceBuildDetails();
-            const buildResultFrontend = yield this.componentBuildService.getFrontendBuildDetails();
-            const buildResultPartnerService = yield this.componentBuildService.getPartnerServiceBuildDetails();
-            this.outputDriver.updateBuildStatusFor(component_model_1.Component.PartnersFrontend, buildResultPartnerFrontend.lastBuildStatus === 'failed' ? raspberryPiViewCode_model_1.ViewCode.OFF : raspberryPiViewCode_model_1.ViewCode.ON);
-            this.outputDriver.updateBuildStatusFor(component_model_1.Component.Admin, buildResultAdmin.lastBuildStatus === 'failed' ? raspberryPiViewCode_model_1.ViewCode.OFF : raspberryPiViewCode_model_1.ViewCode.ON);
-            this.outputDriver.updateBuildStatusFor(component_model_1.Component.Backend, buildResultBackend.lastBuildStatus === 'failed' ? raspberryPiViewCode_model_1.ViewCode.OFF : raspberryPiViewCode_model_1.ViewCode.ON);
-            this.outputDriver.updateBuildStatusFor(component_model_1.Component.FileManagementService, buildResultFileManagementService.lastBuildStatus === 'failed' ? raspberryPiViewCode_model_1.ViewCode.OFF : raspberryPiViewCode_model_1.ViewCode.ON);
-            this.outputDriver.updateBuildStatusFor(component_model_1.Component.Frontend, buildResultFrontend.lastBuildStatus === 'failed' ? raspberryPiViewCode_model_1.ViewCode.OFF : raspberryPiViewCode_model_1.ViewCode.ON);
-            this.outputDriver.updateBuildStatusFor(component_model_1.Component.PartnerService, buildResultPartnerService.lastBuildStatus === 'failed' ? raspberryPiViewCode_model_1.ViewCode.OFF : raspberryPiViewCode_model_1.ViewCode.ON);
+            const components = Component_model_1.ComponentModel.getAllComponents();
+            for (let index = 0; index < components.length; index++) {
+                const buildResult = yield this.componentBuildService.getBuildDetailsFor(components[index]);
+                if (buildResult.lastBuildStatus === 'Failure') {
+                    this.raspberryPiDriver.changeBuildStatus(RaspberryPiViewCode_model_1.ViewCode.OFF);
+                    return;
+                }
+                else {
+                    console.log(`${components[index]} ---> OK`);
+                    continue;
+                }
+            }
+            this.raspberryPiDriver.changeBuildStatus(RaspberryPiViewCode_model_1.ViewCode.ON);
         });
     }
 };
 CicdViewManagerService = __decorate([
     inversify_1.injectable(),
-    __metadata("design:paramtypes", [componentBuild_service_1.ComponentBuildService, ComponentOutputDriver_service_1.ComponentOutputDriverService])
+    __metadata("design:paramtypes", [ComponentBuild_service_1.ComponentBuildService, RaspberryPi_driver_1.RaspberryPiDriver])
 ], CicdViewManagerService);
 exports.CicdViewManagerService = CicdViewManagerService;

@@ -6,15 +6,12 @@ import "reflect-metadata";
 
 @injectable()
 export class RaspberryPiDriver {
-    changePinStatusFor(componentPin: ComponentViewPin, status: ViewCode) {
-        console.log(`start changing ${componentPin} to status ${status}`);
-        const led = new Gpio(componentPin, 'out');
-        led.writeSync(status);
-        console.log(`Done changing ${componentPin} to status ${status}`);
-    }
-
-    getPinStatusFor(componentPin: ComponentViewPin): number {
-        const led = new Gpio(componentPin, 'out');
-        return led.readSync();
+    changeBuildStatus(status: ViewCode) {
+        try {
+            const led = new Gpio(ComponentViewPin.BUILD_OUTPUT, 'out');
+            led.writeSync(status);
+        } catch (e) {
+            console.log(`${ComponentViewPin.BUILD_OUTPUT} --> ${status}`);
+        }
     }
 }

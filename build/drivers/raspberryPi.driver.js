@@ -6,17 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const Component_model_1 = require("../models/Component.model");
 const onoff_1 = require("onoff");
 const inversify_1 = require("inversify");
 require("reflect-metadata");
 let RaspberryPiDriver = class RaspberryPiDriver {
-    changePinStatusFor(componentPin, status) {
-        const led = new onoff_1.Gpio(componentPin, 'out');
-        led.writeSync(status);
-    }
-    getPinStatusFor(componentPin) {
-        const led = new onoff_1.Gpio(componentPin, 'out');
-        return led.readSync();
+    changeBuildStatus(status) {
+        try {
+            const led = new onoff_1.Gpio(Component_model_1.ComponentViewPin.BUILD_OUTPUT, 'out');
+            led.writeSync(status);
+        }
+        catch (e) {
+            console.log(`${Component_model_1.ComponentViewPin.BUILD_OUTPUT} --> ${status}`);
+        }
     }
 };
 RaspberryPiDriver = __decorate([

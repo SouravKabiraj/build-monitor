@@ -9,16 +9,11 @@ var Component;
     Component["PartnersFrontend"] = "PartnersFrontend";
     Component["PartnerService"] = "PartnerService";
     Component["AdminSequel"] = "AdminSequel";
+    Component["EligibilityCheckService"] = "EligibilityCheckService";
 })(Component = exports.Component || (exports.Component = {}));
 var ComponentViewPin;
 (function (ComponentViewPin) {
-    ComponentViewPin[ComponentViewPin["Frontend"] = 0] = "Frontend";
-    ComponentViewPin[ComponentViewPin["Backend"] = 1] = "Backend";
-    ComponentViewPin[ComponentViewPin["Admin"] = 2] = "Admin";
-    ComponentViewPin[ComponentViewPin["FileManagementService"] = 3] = "FileManagementService";
-    ComponentViewPin[ComponentViewPin["PartnersFrontend"] = 4] = "PartnersFrontend";
-    ComponentViewPin[ComponentViewPin["PartnerService"] = 5] = "PartnerService";
-    ComponentViewPin[ComponentViewPin["AdminSequel"] = 6] = "AdminSequel";
+    ComponentViewPin[ComponentViewPin["BUILD_OUTPUT"] = 4] = "BUILD_OUTPUT";
 })(ComponentViewPin = exports.ComponentViewPin || (exports.ComponentViewPin = {}));
 exports.buildNameSeparator = ' :: ';
 var Stage;
@@ -29,23 +24,8 @@ var Stage;
     Stage["Production"] = "Production";
 })(Stage = exports.Stage || (exports.Stage = {}));
 class ComponentModel {
-    static getComponentViewPinFor(component) {
-        switch (component) {
-            case Component.Frontend:
-                return ComponentViewPin.Frontend;
-            case Component.Backend:
-                return ComponentViewPin.Backend;
-            case Component.Admin:
-                return ComponentViewPin.Admin;
-            case Component.FileManagementService:
-                return ComponentViewPin.FileManagementService;
-            case Component.PartnersFrontend:
-                return ComponentViewPin.PartnersFrontend;
-            case Component.PartnerService:
-                return ComponentViewPin.PartnerService;
-            case Component.AdminSequel:
-                return ComponentViewPin.AdminSequel;
-        }
+    static getAllComponents() {
+        return Object.keys(Component);
     }
 }
 exports.ComponentModel = ComponentModel;

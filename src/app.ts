@@ -11,4 +11,4 @@ const cicdViewManager = container.get(CicdViewManagerService);
 
 setInterval(async function () {
     await cicdViewManager.updateCicdView();
-}, 1000);
+}, 5000);

@@ -1,32 +1,27 @@
 import {ComponentBuildService} from "./ComponentBuild.service";
-import {ComponentOutputManagerService} from "./ComponentOutputManager.service";
-import {Component} from "../models/Component.model";
+import {ComponentModel} from "../models/Component.model";
 import {ViewCode} from "../models/RaspberryPiViewCode.model";
 import {injectable} from "inversify";
+import {RaspberryPiDriver} from "../drivers/RaspberryPi.driver";
 
 @injectable()
 export class CicdViewManagerService {
-    constructor(private componentBuildService: ComponentBuildService, private outputDriver: ComponentOutputManagerService) {
+    constructor(private componentBuildService: ComponentBuildService, private raspberryPiDriver: RaspberryPiDriver) {
     }
 
     async updateCicdView(): Promise<void> {
-        console.log('updating Cicd View');
-        const buildResultPartnerFrontend = await this.componentBuildService.getPartnersFrontendBuildDetails();
-        const buildResultAdmin = await this.componentBuildService.getAdminBuildDetails();
-        const buildResultBackend = await this.componentBuildService.getBackendBuildDetails();
-        const buildResultFileManagementService = await this.componentBuildService.getFileManagementServiceBuildDetails();
-        const buildResultFrontend = await this.componentBuildService.getFrontendBuildDetails();
-        const buildResultPartnerService = await this.componentBuildService.getPartnerServiceBuildDetails();
-        const buildResultEligibilityCheckService = await this.componentBuildService.getEligibilityCheckServiceBuildDetails();
-        console.log(JSON.stringify(buildResultEligibilityCheckService));
-
-        this.outputDriver.updateBuildStatusFor(Component.PartnersFrontend, buildResultPartnerFrontend.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.Admin, buildResultAdmin.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.Backend, buildResultBackend.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.FileManagementService, buildResultFileManagementService.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.Frontend, buildResultFrontend.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.PartnerService, buildResultPartnerService.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
-        this.outputDriver.updateBuildStatusFor(Component.EligibilityCheckService, buildResultEligibilityCheckService.lastBuildStatus === 'Failure' ? ViewCode.OFF : ViewCode.ON);
+        const components = ComponentModel.getAllComponents();
+        for (let index = 0; index < components.length; index++) {
+            const buildResult = await this.componentBuildService.getBuildDetailsFor(components[index]);
+            if (buildResult.lastBuildStatus === 'Failure') {
+                this.raspberryPiDriver.changeBuildStatus(ViewCode.OFF);
+                console.log(`${components[index]} build failed`);
+                return;
+            } else {
+                continue;
+            }
+        }
+        this.raspberryPiDriver.changeBuildStatus(ViewCode.ON);
     }
 }
 
