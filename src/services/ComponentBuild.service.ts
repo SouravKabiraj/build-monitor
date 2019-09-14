@@ -12,6 +12,6 @@ export class ComponentBuildService {
 
     async getBuildDetailsFor(component: string): Promise<BuildResult> {
         const completeBuildResult = await this.goCdGateway.getCompleteBuildDetails();
-        return completeBuildResult.find(buildResult => buildResult.name === component + buildNameSeparator + Stage.QA);
+        return completeBuildResult.find(buildResult => buildResult.name === component + buildNameSeparator + Stage.Build);
     }
 }
