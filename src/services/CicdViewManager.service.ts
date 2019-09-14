@@ -14,14 +14,16 @@ export class CicdViewManagerService {
         for (let index = 0; index < components.length; index++) {
             const buildResult = await this.componentBuildService.getBuildDetailsFor(components[index]);
             if (buildResult.lastBuildStatus === 'Failure') {
-                this.raspberryPiDriver.changeBuildStatus(ViewCode.OFF);
+                this.raspberryPiDriver.changeBuildStatusForSuccess(ViewCode.OFF);
+                this.raspberryPiDriver.changeBuildStatusForFail(ViewCode.ON);
                 console.log(`${components[index]} build failed`);
                 return;
             } else {
                 continue;
             }
         }
-        this.raspberryPiDriver.changeBuildStatus(ViewCode.ON);
+        this.raspberryPiDriver.changeBuildStatusForSuccess(ViewCode.ON);
+        this.raspberryPiDriver.changeBuildStatusForFail(ViewCode.OFF);
     }
 }
 

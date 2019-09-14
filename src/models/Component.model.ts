@@ -13,7 +13,8 @@ export enum Component {
 }
 
 export enum ComponentViewPin {
-    BUILD_OUTPUT = 4
+    BUILD_OUTPUT_SUCCESS = 4,
+    BUILD_OUTPUT_FAIL = 26,
 }
 
 export const buildNameSeparator = ' :: ';
