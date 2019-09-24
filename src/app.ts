@@ -1,9 +1,10 @@
 import {Container} from "inversify";
 import {CicdViewManagerService} from "./services/CicdViewManager.service";
+import {FileLogUtility} from "./utility/file-log.utility";
 
-console.log('Hello Finzy..');
-console.log('GoCD build monitor is starting...');
-console.log('GoCD build monitor is running...');
+FileLogUtility.log('Hello Finzy..');
+FileLogUtility.log('GoCD build monitor is starting...');
+FileLogUtility.log('GoCD build monitor is running...');
 
 const container = new Container({autoBindInjectable: true});
 

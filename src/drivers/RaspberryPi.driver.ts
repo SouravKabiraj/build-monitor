@@ -3,6 +3,7 @@ import {RaspberryPiViewCodeModel, ViewCode} from "../models/RaspberryPiViewCode.
 import {Gpio} from "onoff";
 import {injectable} from "inversify";
 import "reflect-metadata";
+import {FileLogUtility} from "../utility/file-log.utility";
 
 @injectable()
 export class RaspberryPiDriver {
@@ -13,7 +14,7 @@ export class RaspberryPiDriver {
             ledSuccess.writeSync(status);
             ledFail.writeSync(RaspberryPiViewCodeModel.getOppositViewCode(status));
         } catch (e) {
-            console.log(`${ComponentViewPin.BUILD_OUTPUT_SUCCESS} --> ${status}`);
+            FileLogUtility.log(`${ComponentViewPin.BUILD_OUTPUT_SUCCESS} --> ${status}`);
         }
     }
 
@@ -24,7 +25,7 @@ export class RaspberryPiDriver {
             ledFail.writeSync(status);
             ledSuccess.writeSync(RaspberryPiViewCodeModel.getOppositViewCode(status));
         } catch (e) {
-            console.log(`${ComponentViewPin.BUILD_OUTPUT_FAIL} --> ${status}`);
+            FileLogUtility.log(`${ComponentViewPin.BUILD_OUTPUT_FAIL} --> ${status}`);
         }
     }
 }
