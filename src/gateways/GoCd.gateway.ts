@@ -9,7 +9,7 @@ export class GoCdGateway {
     async getCompleteBuildDetails(): Promise<BuildResult[]> {
         try {
             const response = await request
-                .get('http://www.mocky.io/v2/5d7cbd66350000d347913b6d')
+                .get('http://35.154.139.4:8153/go/cctray.xml')
                 .auth('build-monitor', 'bu!ldm0n!t0r', {type: 'basic'})
                 .set('Accept', 'application/vnd.go.cd.v1+json')
                 .send();
